@@ -1,0 +1,22 @@
+### Create Payment
+POST localhost:8081/payment
+Content-Type: application/json
+
+{
+  "sellerId": "1234",
+  "customerId": "1234",
+  "amount": 1234,
+  "tax": 5
+}
+
+### Get Payment By Id
+GET localhost:8081/payment/61ab873b339cac33b292fff0
+
+### Find All Payments
+GET localhost:8081/payment
+
+### Get Account By Id
+GET localhost:8081/payment/account/1
+
+### List All Accounts
+GET localhost:8081/payment/account

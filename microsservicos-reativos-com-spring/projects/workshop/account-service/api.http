@@ -1,0 +1,14 @@
+### Create Account
+POST localhost:8082/account
+Content-Type: application/json
+
+{
+  "id": 1,
+  "amount": 321
+}
+
+### List Accounts
+GET localhost:8082/account
+
+### Find Account By Id
+GET localhost:8082/account/1
