@@ -1,4 +1,4 @@
-as# O Futuro do Java - Kamila Santos
+# O Futuro do Java - Kamila Santos
 
 ### Novidades do Java 17
 
