@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    //allow use imports/exports from CommonJS
+    "module": "CommonJS",
+    //allow use export default
+    "esModuleInterop": true,
+    //define which version of JavaScript the final build of the project will generate
+    //as NodeJS in its version 14 uses it, it already accepts 100%, ES2020 iremo uses it
+    "target": "ES2020",
+    //activate the use of decorators
+    "experimentalDecorators": true,
+    /**
+     * TypeScript fornece a emitDecoratorMetadataopção do compilador (ou o --emitDecoratorMetadatasinalizador do compilador)
+     * para adicionar implicitamente metadados específicos à classe ou seus membros.
+     * Quando essa opção é definida como true, o compilador TypeScript injeta algum código
+     * extra no JavaScript compilado ao usar decoradores.
+    */
+    "emitDecoratorMetadata": true
+  }
+}
