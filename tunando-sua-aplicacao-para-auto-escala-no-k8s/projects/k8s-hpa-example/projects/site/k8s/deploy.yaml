@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: site
+  labels:
+    app: site
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: site
+  template:
+    metadata:
+      labels:
+        app: site
+    spec:
+      containers:
+      - name: site
+        image: localhost:5000/site:local
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+        resources: # https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+          requests:
+            memory: "10Mi"
+            cpu: "150m"
+          limits:
+            memory: "20Mi"
+            cpu: "150m"
+
